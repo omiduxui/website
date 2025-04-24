@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>پورتفولیو امید احمدنژاد</title>
+  <title>Omid Ahmadnejad</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-M9Q3ksIxR3zFzJ0W1R1V3RZ6BiA8CMGptogTnJPMWakPC6mCN0mJrYBYsRzj+aBqdoKnyz9KNM8FMy/7tG9lzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,6 +34,33 @@
       0% { opacity: 0; transform: translateY(30px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+    .custom-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px 4px 16px;
+      height: 40px;
+      border-radius: 8px;
+      font-weight: bold;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .custom-button.resume {
+      background: #FFC757;
+      color: black;
+    }
+    .custom-button.resume:hover {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #FFC757;
+    }
+    .custom-button.portfolio {
+      background: #ffffff;
+      color: #1C0E50;
+    }
+    .custom-button.portfolio:hover {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #ffffff;
+    }
+  </style>
   </style>
 </head>
 <body class="bg-white text-[#1A1A1A]">
@@ -48,13 +75,12 @@
       <h1 class="text-4xl font-bold mb-4">Omid Ahmadnejad</h1>
     <p class="text-lg mb-6 max-w-xl">UX/UI Designer</p>
       <div class="flex flex-col sm:flex-row gap-4 mb-6">
-        <a href="Omid%20Ahmadnejad%20V1.pdf" target="_blank" class="bg-[#FFC857] text-black px-6 py-3 rounded-xl font-bold shadow hover:bg-yellow-400 transition">دانلود رزومه</a>
-        <a href="portfolio.pdf" target="_blank" class="bg-white text-[#1C0E50] px-6 py-3 rounded-xl font-bold shadow hover:bg-gray-100 transition">مشاهده پورتفولیو</a>
-      </div>
+        <a href="Omid%20Ahmadnejad%20V1.pdf" target="_blank" class="custom-button resume font-bold shadow text-black">Resume</a>
+        <a href="portfolio.pdf" target="_blank" class="custom-button portfolio font-bold shadow">Portfolio</a>      </div>
       <div class="text-center space-y-4 text-lg">
         <p><i class="fas fa-envelope text-[#FFC857] ml-2"></i><a href="mailto:omid.ahmadnejad@gmail.com" class="underline">omid.ahmadnejad@gmail.com</a></p>
         <p><i class="fas fa-phone-alt text-[#FFC857] ml-2"></i><a href="tel:+989369507200" class="underline" dir="ltr">+98-936-950-7200</a></p>
-        <p><i class="fab fa-linkedin text-[#FFC857] ml-2"></i><a href="www.linkedin.com/in/omid-ahmadnejad" class="underline" target="_blank">Linkedin</a></p>
+        <p><i class="fab fa-linkedin text-[#FFC857] ml-2"></i><a href="https://www.linkedin.com/in/omid-ahmadnejad" class="underline" target="_blank">Linkedin</a></p>
       </div>
     </section>
   </div>
