@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
   <meta charset="UTF" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omid Ahmadnejad</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
@@ -16,7 +15,6 @@
       background-color: #0d0d0d;
       color: white;
       margin: 0;
-      overflow: hidden;
     }
 
     #tsparticles {
@@ -79,21 +77,26 @@
     }
   </style>
 </head>
-<body>
-  <!-- پارتیکل‌ها فقط سمت راست -->
+<body class="relative">
+
+  <!-- پارتیکل -->
   <div id="tsparticles"></div>
 
   <!-- محتوا -->
-  <div class="relative z-10 flex flex-col items-end justify-center text-right min-h-screen px-6">
-    <h1 class="text-6xl font-extrabold mb-4"><span class="typewriter-text">Omid Ahmadnejad</span></h1>
-    <p class="text-2xl mb-8"><span class="typewriter-text">UX/UI Designer</span></p>
+  <div class="relative z-10 flex flex-col items-end justify-center text-right min-h-screen px-4 sm:px-6">
+    <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 text-right">
+      <span class="typewriter-text">Omid Ahmadnejad</span>
+    </h1>
+    <p class="text-xl sm:text-2xl mb-8 text-right">
+      <span class="typewriter-text">UX/UI Designer</span>
+    </p>
 
-    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-      <a href="portfolio.pdf" target="_blank" class="custom-button portfolio shadow">Portfolio</a>
-      <a href="Omid%20Ahmadnejad%20V1.pdf" target="_blank" class="custom-button resume shadow">Resume</a>
+    <div class="flex flex-col sm:flex-row gap-4 mb-10 w-full sm:w-auto">
+      <a href="portfolio.pdf" target="_blank" class="custom-button portfolio shadow text-sm sm:text-base w-full sm:w-auto text-center">Portfolio</a>
+      <a href="Omid%20Ahmadnejad%20V1.pdf" target="_blank" class="custom-button resume shadow text-sm sm:text-base w-full sm:w-auto text-center">Resume</a>
     </div>
 
-    <div class="space-y-4 text-xl w-full sm:w-auto">
+    <div class="space-y-4 text-base sm:text-xl w-full sm:w-auto">
       <p class="flex items-center justify-end gap-3">
         <a href="mailto:omid.ahmadnejad@gmail.com" class="underline">omid.ahmadnejad@gmail.com</a>
         <i class="fas fa-envelope text-yellow-400 text-xl"></i>
@@ -109,7 +112,7 @@
     </div>
   </div>
 
-  <!-- اسکریپت: تایپ و پارتیکل با تعامل موس -->
+  <!-- اسکریپت‌ها -->
   <script>
     // افکت تایپ
     window.addEventListener('load', () => {
@@ -119,11 +122,9 @@
       });
     });
 
-    // پارتیکل‌ها سمت راست با افکت موس
+    // پارتیکل سمت راست با تعامل موس
     tsParticles.load("tsparticles", {
-      background: {
-        color: "#0d0d0d"
-      },
+      background: { color: "#0d0d0d" },
       fpsLimit: 60,
       interactivity: {
         events: {
