@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پورتفولیو امید احمدنژاد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-M9Q3ksIxR3zFzJ0W1R1V3RZ6BiA8CMGptogTnJPMWakPC6mCN0mJrYBYsRzj+aBqdoKnyz9KNM8FMy/7tG9lzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body { font-family: 'Vazirmatn', sans-serif; }
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #1C0E50;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.788)), url('assets/379.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn ease 2s forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-white text-[#1A1A1A]">
+  <!-- Loader -->
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main" class="hidden">
+    <section class="hero-bg min-h-screen flex flex-col justify-center items-center text-center p-6 text-white fade-in">
+      <h1 class="text-4xl font-bold mb-4">Omid Ahmadnejad</h1>
+    <p class="text-lg mb-6 max-w-xl">UX/UI Designer</p>
+      <div class="flex flex-col sm:flex-row gap-4 mb-6">
+        <a href="Omid%20Ahmadnejad%20V1.pdf" target="_blank" class="bg-[#FFC857] text-black px-6 py-3 rounded-xl font-bold shadow hover:bg-yellow-400 transition">دانلود رزومه</a>
+        <a href="portfolio.pdf" target="_blank" class="bg-white text-[#1C0E50] px-6 py-3 rounded-xl font-bold shadow hover:bg-gray-100 transition">مشاهده پورتفولیو</a>
+      </div>
+      <div class="text-center space-y-4 text-lg">
+        <p><i class="fas fa-envelope text-[#FFC857] ml-2"></i><a href="mailto:omid.ahmadnejad@gmail.com" class="underline">omid.ahmadnejad@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt text-[#FFC857] ml-2"></i><a href="tel:+989369507200" class="underline" dir="ltr">+98-936-950-7200</a></p>
+        <p><i class="fab fa-linkedin text-[#FFC857] ml-2"></i><a href="www.linkedin.com/in/omid-ahmadnejad" class="underline" target="_blank">Linkedin</a></p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const main = document.getElementById('main');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        main.classList.remove('hidden');
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
